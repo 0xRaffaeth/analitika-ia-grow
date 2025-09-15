@@ -14,13 +14,11 @@ const Footer = () => {
           {/* Company Info */}
           <div className="md:col-span-2">
             <div className="mb-6">
-              <div className="bg-white rounded-lg p-2 inline-block mb-2">
-                <img 
-                  src="/lovable-uploads/6e64c8a6-41e9-42fd-9a1e-db79f33c19f6.png" 
-                  alt="Analitika Agency Logo" 
-                  className="h-8 w-auto"
-                />
-              </div>
+              <img 
+                src="/lovable-uploads/6e64c8a6-41e9-42fd-9a1e-db79f33c19f6.png" 
+                alt="Analitika Agency Logo" 
+                className="h-12 w-auto mb-2"
+              />
               <p className="text-background/80 leading-relaxed max-w-md">
                 Especialistas em tráfego pago e automações com inteligência artificial 
                 para acelerar o crescimento de pequenos negócios e e-commerces.
