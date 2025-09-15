@@ -1,15 +1,13 @@
 const Header = () => {
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border/50">
+    <header className="fixed top-0 left-0 right-0 z-50">
       <div className="container mx-auto px-6 py-4">
         <div className="flex justify-center">
-          <div className="bg-white rounded-lg p-2">
-            <img 
-              src="/lovable-uploads/6e64c8a6-41e9-42fd-9a1e-db79f33c19f6.png" 
-              alt="Analitika Agency Logo" 
-              className="h-10 w-auto"
-            />
-          </div>
+          <img 
+            src="/lovable-uploads/6e64c8a6-41e9-42fd-9a1e-db79f33c19f6.png" 
+            alt="Analitika Agency Logo" 
+            className="h-10 w-auto"
+          />
         </div>
       </div>
     </header>
