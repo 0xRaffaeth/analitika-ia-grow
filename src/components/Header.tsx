@@ -6,7 +6,7 @@ const Header = () => {
           <img 
             src="/lovable-uploads/6e64c8a6-41e9-42fd-9a1e-db79f33c19f6.png" 
             alt="Analitika Agency Logo" 
-            className="h-16 w-auto mix-blend-multiply"
+            className="h-25 w-auto mix-blend-multiply"
             style={{ filter: 'drop-shadow(0 2px 4px rgba(0,0,0,0.1))' }}
           />
         </div>
