@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Analitika Agency | Assessoria de Growth & IA</title>
+    <meta name="description" content="Assessoria de marketing digital especializada em ROI, Tráfego Pago, Google Meu Negócio e Automação com IA." />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            colors: {
+              brand: {
+                dark: '#020617',    // Ultra dark blue, almost black (Professional)
+                card: '#0f172a',    // Slightly lighter for cards
+                primary: '#3b82f6', // Standard Blue
+                accent: '#ff5500',  // High contrast Orange for CTAs
+                text: '#f8fafc',
+                gray: '#94a3b8'
+              }
+            },
+            backgroundImage: {
+              'grid-pattern': "linear-gradient(to right, #1e293b 1px, transparent 1px), linear-gradient(to bottom, #1e293b 1px, transparent 1px)",
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body { font-family: 'Inter', sans-serif; background-color: #020617; color: #f8fafc; overflow-x: hidden; }
+      .glass-panel {
+        background: rgba(15, 23, 42, 0.6);
+        backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+      }
+      .method-card:hover {
+        border-color: #ff5500;
+        transform: translateY(-6px);
+        box-shadow: 0 20px 40px rgba(255, 85, 0, 0.08);
+      }
+      .bg-grid {
+        background-size: 40px 40px;
+        mask-image: linear-gradient(to bottom, transparent, 10%, black, 90%, transparent);
+      }
+      /* Stat counter animation */
+      @keyframes countUp {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      .stat-animate {
+        animation: countUp 0.6s ease forwards;
+      }
+      /* Hero text shimmer */
+      @keyframes shimmer {
+        0% { background-position: -200% center; }
+        100% { background-position: 200% center; }
+      }
+      .shimmer-text {
+        background: linear-gradient(90deg, #ff5500, #ff8844, #ff5500);
+        background-size: 200% auto;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: shimmer 4s linear infinite;
+      }
+      /* Smooth reveal */
+      @keyframes fadeInUp {
+        from { opacity: 0; transform: translateY(30px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      .fade-in-up {
+        animation: fadeInUp 0.7s ease forwards;
+      }
+      .fade-in-up-delay-1 { animation-delay: 0.15s; opacity: 0; animation-fill-mode: forwards; }
+      .fade-in-up-delay-2 { animation-delay: 0.3s; opacity: 0; animation-fill-mode: forwards; }
+      .fade-in-up-delay-3 { animation-delay: 0.45s; opacity: 0; animation-fill-mode: forwards; }
+      /* CTA pulse ring */
+      @keyframes ring-pulse {
+        0% { box-shadow: 0 0 0 0 rgba(255, 85, 0, 0.4); }
+        70% { box-shadow: 0 0 0 14px rgba(255, 85, 0, 0); }
+        100% { box-shadow: 0 0 0 0 rgba(255, 85, 0, 0); }
+      }
+      .cta-pulse { animation: ring-pulse 2.2s ease-out infinite; }
+      /* Segment card */
+      .segment-card {
+        position: relative;
+        overflow: hidden;
+      }
+      .segment-card::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(135deg, rgba(255,85,0,0.06) 0%, transparent 60%);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
+      .segment-card:hover::before { opacity: 1; }
+      /* Form input focus glow */
+      input:focus, select:focus, textarea:focus {
+        box-shadow: 0 0 0 2px rgba(255, 85, 0, 0.12);
+        outline: none;
+      }
+      /* Noise texture overlay for depth */
+      .noise-overlay::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+        pointer-events: none;
+        opacity: 0.4;
+      }
+      /* Section divider accent */
+      .section-accent-line {
+        display: inline-block;
+        width: 36px;
+        height: 3px;
+        background: linear-gradient(90deg, #ff5500, #ff8844);
+        border-radius: 2px;
+        margin-bottom: 12px;
+      }
+      /* Trust badge */
+      .trust-badge {
+        background: rgba(255,255,255,0.03);
+        border: 1px solid rgba(255,255,255,0.07);
+        border-radius: 6px;
+        padding: 8px 14px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      /* WhatsApp float button */
+      .whatsapp-float {
+        position: fixed;
+        bottom: 28px;
+        right: 28px;
+        z-index: 999;
+        background: #25D366;
+        color: white;
+        border-radius: 50%;
+        width: 56px;
+        height: 56px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        cursor: pointer;
+        text-decoration: none;
+      }
+      .whatsapp-float:hover {
+        transform: scale(1.1);
+        box-shadow: 0 6px 28px rgba(37, 211, 102, 0.6);
+      }
+      /* Scrollbar */
+      ::-webkit-scrollbar { width: 4px; }
+      ::-webkit-scrollbar-track { background: #020617; }
+      ::-webkit-scrollbar-thumb { background: #1e293b; border-radius: 2px; }
+      ::-webkit-scrollbar-thumb:hover { background: #ff5500; }
+      /* Improved select styling */
+      select option { background-color: #0f172a; color: #f8fafc; }
+      /* Minimum font size baseline */
+      .text-xs { font-size: 0.75rem; } /* 12px min */
+    </style>
+  <!-- TrackBR — tracking server-side (teste) -->
+  <script
+    src="https://trackbr.analitika.agency/trackbr.js"
+    data-workspace="dev_key_trackbr_12345"
+    data-endpoint="https://trackbr.analitika.agency"
+    async
+  ></script>
+
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.31.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
