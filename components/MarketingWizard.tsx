@@ -69,13 +69,21 @@ export const MarketingWizard: React.FC = () => {
     setLoading(true);
     await sendLeadToAutomation(form as any);
 
-    // Identifica o lead no TrackBR para vincular fingerprint ao perfil
+    // TrackBR — vincula fingerprint ao perfil
     if (typeof window !== 'undefined' && (window as any).TrackBR) {
       (window as any).TrackBR.identify({
         email: form.email,
         phone: form.phone,
         name: form.name,
       }).catch(() => {});
+    }
+
+    // Meta Pixel — evento Lead
+    if (typeof window !== 'undefined' && (window as any).fbq) {
+      (window as any).fbq('track', 'Lead', {
+        content_name: 'Diagnóstico Gratuito',
+        content_category: 'Marketing Digital',
+      });
     }
 
     setLoading(false);
