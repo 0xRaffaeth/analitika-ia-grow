@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Débora Cristina — Nutricionista em Anápolis</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--pink:#E63780; --purple:#6C3CE8; --ink:#181022; --muted:#6b6478; --bg:#0F0A17; --card:#1B1428; --line:#2E2740}
+*{box-sizing:border-box; margin:0; padding:0}
+body{font-family:'Inter',sans-serif; background:var(--bg); color:#fff; line-height:1.6}
+h1,h2,h3{font-family:'Sora',sans-serif; font-weight:800; line-height:1.15}
+a{color:inherit; text-decoration:none}
+img{max-width:100%; display:block}
+.wrap{max-width:1080px; margin:0 auto; padding:0 24px}
+.grad{background:linear-gradient(135deg,var(--pink),var(--purple))}
+header{padding:20px 24px; display:flex; align-items:center; justify-content:space-between; max-width:1080px; margin:0 auto}
+.brand{font-family:'Sora',sans-serif; font-weight:800; font-size:18px}
+.badge{font-size:12px; background:var(--card); border:1px solid var(--line); padding:6px 12px; border-radius:99px; color:#ddd}
+.hero{text-align:center; padding:clamp(40px,7vw,70px) 24px 20px}
+.avatar{width:120px; height:120px; border-radius:50%; margin:0 auto 22px; padding:4px; background:linear-gradient(135deg,var(--pink),var(--purple))}
+.avatar img{border-radius:50%; width:100%; height:100%; object-fit:cover}
+h1.headline{font-size:clamp(30px,5.5vw,52px); margin-bottom:16px}
+h1.headline span{background:linear-gradient(135deg,var(--pink),var(--purple)); -webkit-background-clip:text; background-clip:text; color:transparent}
+.lead{color:#c9c3d6; max-width:520px; margin:0 auto; font-size:clamp(15px,2vw,18px)}
+.statbar{display:flex; justify-content:center; gap:clamp(20px,5vw,60px); margin:44px auto; flex-wrap:wrap}
+.statbar div b{display:block; font-family:'Sora',sans-serif; font-size:clamp(26px,4vw,36px); background:linear-gradient(135deg,var(--pink),var(--purple)); -webkit-background-clip:text; background-clip:text; color:transparent}
+.statbar div span{font-size:12.5px; color:var(--muted); text-transform:uppercase; letter-spacing:.04em}
+.btn{display:inline-block; padding:15px 30px; border-radius:99px; font-weight:700; font-size:15px; color:#fff}
+.btn.grad{background:linear-gradient(135deg,var(--pink),var(--purple))}
+section{padding:clamp(40px,7vw,80px) 24px}
+.section-title{text-align:center; font-size:clamp(24px,4vw,34px); margin-bottom:12px}
+.section-sub{text-align:center; color:var(--muted); max-width:520px; margin:0 auto 40px}
+.grid3{display:grid; grid-template-columns:repeat(3,1fr); gap:20px}
+@media(max-width:820px){.grid3{grid-template-columns:1fr}}
+.card{background:var(--card); border:1px solid var(--line); border-radius:20px; padding:28px}
+.card .stars{color:#FFD873; margin-bottom:10px}
+.card p{font-size:14.5px; color:#d8d3e2}
+.pillrow{display:flex; gap:10px; justify-content:center; flex-wrap:wrap; margin-top:24px}
+.pill{background:var(--card); border:1px solid var(--line); padding:8px 16px; border-radius:99px; font-size:13px; color:#ddd}
+.locbox{background:var(--card); border:1px solid var(--line); border-radius:20px; padding:28px; max-width:480px; margin:0 auto}
+.locbox li{list-style:none; display:flex; justify-content:space-between; padding:10px 0; border-bottom:1px solid var(--line); font-size:14px}
+.locbox li:last-child{border-bottom:none}
+.locbox li span:first-child{color:var(--muted)}
+.finalcta{border-radius:28px; text-align:center; padding:clamp(40px,7vw,70px) 24px}
+.finalcta h2{font-size:clamp(24px,4vw,38px); margin-bottom:16px}
+.finalcta .btn{background:#fff; color:var(--purple)}
+footer{text-align:center; padding:28px 24px; color:var(--muted); font-size:13px}
+.wa-float{position:fixed; bottom:22px; right:22px; width:58px; height:58px; border-radius:50%; background:#25D366; display:flex; align-items:center; justify-content:center; box-shadow:0 6px 18px rgba(0,0,0,.4); z-index:60}
+.wa-float svg{width:28px; height:28px; fill:#fff}
+</style>
+</head>
+<body>
+
+<header>
+  <span class="brand">Débora Cristina</span>
+  <span class="badge">🏳️‍🌈 empresa que acolhe a comunidade LGBTQ+</span>
+</header>
+
+<section class="hero">
+  <div class="avatar"><img src="data:image/jpeg;base64,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" alt="Débora Cristina"></div>
+  <span class="badge">★ 5,0 no Google · 105 avaliações</span>
+  <h1 class="headline">Chega de tentar <span>várias dietas.</span></h1>
+  <p class="lead">Nutri da vida real. Aprenda a comer de verdade, sem restrição, com acompanhamento de quem já ajudou centenas de pacientes em Anápolis a mudar de vez a relação com a comida.</p>
+  <div style="margin-top:30px"><a class="btn grad" href="https://wa.me/5562999239737?text=Ol%C3%A1%20Debora!%20Vi%20seu%20novo%20site%20e%20quero%20agendar%20uma%20consulta." target="_blank">Agendar no WhatsApp</a></div>
+  <div class="statbar">
+    <div><b>5,0</b><span>nota no Google</span></div>
+    <div><b>105</b><span>avaliações</span></div>
+    <div><b>36,5k</b><span>seguidores no Instagram</span></div>
+  </div>
+</section>
+
+<section class="wrap">
+  <h2 class="section-title">Comer de verdade, sem dieta da moda</h2>
+  <p class="section-sub">Acompanhamento nutricional focado em hábito real — não em restrição que você abandona em duas semanas.</p>
+  <div class="grid3">
+    <div class="card"><h3 style="font-size:17px; margin-bottom:8px">Sem dietas mirabolantes</h3><p>Plano alimentar de verdade, cabível na sua rotina, sem promessas milagrosas.</p></div>
+    <div class="card"><h3 style="font-size:17px; margin-bottom:8px">Espaço acolhedor</h3><p>Atendimento no Centro de Anápolis, num ambiente pensado pra você se sentir à vontade.</p></div>
+    <div class="card"><h3 style="font-size:17px; margin-bottom:8px">Evolução real</h3><p>Cada consulta é uma aula — você aprende o porquê de cada mudança, não só o "o quê".</p></div>
+  </div>
+</section>
+
+<section class="wrap">
+  <h2 class="section-title">O que dizem as pacientes</h2>
+  <p class="section-sub">Avaliações reais do Google — nota 5,0 em 105 avaliações.</p>
+  <div class="grid3">
+    <div class="card"><div class="stars">★★★★★</div><p>"Ótimo atendimento, muito atenciosa, cada consulta é uma aula."</p></div>
+    <div class="card"><div class="stars">★★★★★</div><p>"Excelente profissional! Muito atenciosa e realmente preocupada com o bem-estar dos pacientes."</p></div>
+    <div class="card"><div class="stars">★★★★★</div><p>"É uma profissional de primeira prateleira, muito atenciosa aos detalhes, paciente..."</p></div>
+  </div>
+</section>
+
+<section class="wrap" style="text-align:center">
+  <h2 class="section-title">Onde e quando</h2>
+  <div class="locbox">
+    <li><span>Endereço</span><span>R. Cel. Batista, 415 — Centro, Anápolis</span></li>
+    <li><span>Horário</span><span>Seg a Sáb, fecha 20h</span></li>
+    <li><span>WhatsApp</span><span>(62) 99923-9737</span></li>
+    <li><span>Instagram</span><span>@nutri.deboraa</span></li>
+  </div>
+</section>
+
+<section class="wrap">
+  <div class="finalcta grad">
+    <h2>Bora comer de verdade?</h2>
+    <a class="btn" href="https://wa.me/5562999239737?text=Ol%C3%A1%20Debora!%20Vi%20seu%20novo%20site%20e%20quero%20agendar%20uma%20consulta." target="_blank">Agendar consulta no WhatsApp</a>
+  </div>
+</section>
+
+<footer>Débora Cristina Nutricionista · R. Cel. Batista, 415, Centro, Anápolis - GO</footer>
+
+<a class="wa-float" href="https://wa.me/5562999239737?text=Ol%C3%A1%20Debora!%20Vi%20seu%20novo%20site%20e%20quero%20agendar%20uma%20consulta." target="_blank" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.87.5 3.62 1.44 5.14L2 22l5.13-1.5c1.46.8 3.12 1.25 4.9 1.25h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7C17.19 3.04 14.7 2 12.04 2z"/></svg>
+</a>
+
+</body>
+</html>
