@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clínica Odontológica Dra. Lilian Faria — Anápolis</title>
+<meta name="description" content="Clínica odontológica acolhedora em Anápolis. Nota 5.0 no Google, atendimento cuidadoso para toda a família.">
+<meta property="og:title" content="Clínica Odontológica Dra. Lilian Faria">
+<meta property="og:description" content="Atendimento odontológico acolhedor em Anápolis, nota 5.0 com 43 avaliações. Ambiente calmo, cuidado de verdade.">
+<meta property="og:image" content="https://analitika.agency/lilian-faria/og.jpg">
+<meta property="og:url" content="https://analitika.agency/lilian-faria/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@1,500;0,600;0,700&family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--rose:#e7b8b0;--rose-dk:#c07d74;--sage:#8fa688;--sage-dk:#5f7458;--cream:#fdf8f4;--ink:#3a332f;--muted:#8a7d76;--line:#f0e2db}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Nunito',sans-serif;color:var(--ink);background:var(--cream);line-height:1.65}
+h1,h2,h3{font-family:'Fraunces',serif;line-height:1.2}
+img{max-width:100%;display:block;border-radius:24px}
+a{color:inherit;text-decoration:none}
+header{padding:18px 24px}
+.nav{max-width:1140px;margin:0 auto;display:flex;align-items:center;justify-content:space-between}
+.brand{font-family:'Fraunces',serif;font-style:italic;font-weight:600;font-size:20px;color:var(--rose-dk)}
+.nav a.cta{background:var(--sage);color:#fff;padding:10px 20px;border-radius:99px;font-weight:700;font-size:14px}
+.hero{max-width:1140px;margin:0 auto;padding:clamp(30px,5vw,60px) 24px clamp(60px,8vw,100px)}
+.hero-grid{display:grid;grid-template-columns:1fr .9fr;gap:56px;align-items:center}
+@media(max-width:900px){.hero-grid{grid-template-columns:1fr;text-align:center}}
+.chip{display:inline-block;background:#fff;border:1px solid var(--line);color:var(--sage-dk);font-weight:700;font-size:13px;padding:7px 16px;border-radius:99px;margin-bottom:22px}
+h1.headline{font-size:clamp(32px,4.6vw,50px);font-weight:600;margin-bottom:20px;color:var(--ink)}
+h1.headline em{font-style:italic;color:var(--rose-dk)}
+.hero p.lead{color:var(--muted);font-size:clamp(15px,1.6vw,18px);max-width:440px}
+@media(max-width:900px){.hero p.lead{margin:0 auto}}
+.btnrow{display:flex;gap:14px;margin-top:30px;flex-wrap:wrap}
+@media(max-width:900px){.btnrow{justify-content:center}}
+.btn{padding:15px 28px;border-radius:99px;font-weight:700;font-size:15px}
+.btn.primary{background:var(--sage);color:#fff}
+.btn.ghost{border:1px solid var(--line);color:var(--ink);background:#fff}
+.heroimg{position:relative}
+.heroimg::before{content:'';position:absolute;inset:-14px;background:var(--rose);border-radius:34px;z-index:0;opacity:.5}
+.heroimg img{position:relative;z-index:1;aspect-ratio:4/3;object-fit:cover;width:100%}
+section{padding:clamp(50px,7vw,86px) 24px}
+.inner{max-width:1140px;margin:0 auto}
+.section-head{text-align:center;max-width:600px;margin:0 auto 44px}
+.section-head .tag{color:var(--rose-dk);font-weight:800;font-size:12px;letter-spacing:1.5px;text-transform:uppercase}
+.section-head h2{font-size:clamp(26px,3.2vw,36px);margin-top:8px}
+.diffs{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:1140px;margin:0 auto}
+@media(max-width:860px){.diffs{grid-template-columns:1fr}}
+.diff-card{background:#fff;border-radius:20px;padding:30px 26px;text-align:center;border:1px solid var(--line)}
+.diff-card .ico{font-size:30px;margin-bottom:14px}
+.diff-card h3{font-size:18px;margin-bottom:8px;font-family:'Nunito',sans-serif;font-weight:800}
+.diff-card p{color:var(--muted);font-size:14px}
+.team-band{background:var(--sage);color:#fff;border-radius:28px;max-width:1140px;margin:0 auto;padding:clamp(36px,5vw,56px);display:grid;grid-template-columns:1fr 1fr;gap:32px}
+@media(max-width:760px){.team-band{grid-template-columns:1fr}}
+.team-band h3{font-family:'Fraunces',serif;font-style:italic;font-size:22px;margin-bottom:8px}
+.team-band p{color:#e7f0e5;font-size:14px}
+.reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:1140px;margin:0 auto}
+@media(max-width:860px){.reviews{grid-template-columns:1fr}}
+.review{background:#fff;border-radius:20px;padding:26px;border:1px solid var(--line)}
+.review .stars{color:var(--rose-dk);font-size:14px;margin-bottom:10px}
+.review p{font-size:14.5px;margin-bottom:14px}
+.review .who{font-size:13px;color:var(--muted);font-weight:700}
+.locate{background:#fff;border-radius:24px;border:1px solid var(--line);padding:clamp(32px,5vw,48px);max-width:1140px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:center}
+@media(max-width:800px){.locate{grid-template-columns:1fr}}
+.locate .row{display:flex;gap:12px;margin-bottom:16px;font-size:14.5px}
+.locate .row b{min-width:88px;color:var(--rose-dk)}
+footer{text-align:center;padding:28px;color:var(--muted);font-size:13px}
+.wa-float{position:fixed;bottom:22px;right:22px;background:#25D366;color:#fff;width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(0,0,0,.2);z-index:70;font-size:26px}
+</style>
+</head>
+<body>
+<header>
+<div class="nav">
+<div class="brand">Dra. Lilian Faria</div>
+<a class="cta" href="https://wa.me/5562986229991?text=Ol%C3%A1!%20Vi%20o%20site%20e%20gostaria%20de%20agendar%20uma%20consulta." target="_blank" rel="noopener">Agendar consulta</a>
+</div>
+</header>
+
+<section class="hero">
+<div class="hero-grid">
+<div>
+<span class="chip">★ 5,0 · 43 avaliações no Google</span>
+<h1 class="headline">Cuidado odontológico que <em>acolhe</em> antes de tratar</h1>
+<p class="lead">Clínica em Anápolis com ambiente organizado, calmo e seguro — do primeiro sorriso aos pequenos da casa.</p>
+<div class="btnrow">
+<a class="btn primary" href="https://wa.me/5562986229991?text=Ol%C3%A1!%20Vi%20o%20site%20e%20gostaria%20de%20agendar%20uma%20consulta." target="_blank" rel="noopener">Agendar no WhatsApp</a>
+<a class="btn ghost" href="tel:+5562986229991">Ligar</a>
+</div>
+</div>
+<div class="heroimg"><img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkDtSG4MJBBI6IofDrH12zxpWcjq0atG1-WeZaQEHugB3c_blpisHYMd1xLGq4J0BXc0NvV-5mZneMRudtt4FxKyDUAvsiLhf_Yo5IsB-492nkBmKsAEp6Kgw-xWcrQWwzYmx5y=w1200-h900-k-no" alt="Clínica Odontológica Dra. Lilian Faria"></div>
+</div>
+</section>
+
+<section>
+<div class="section-head"><span class="tag">Por que os pacientes voltam</span><h2>Um jeito diferente de cuidar</h2></div>
+<div class="diffs">
+<div class="diff-card"><div class="ico">🤍</div><h3>Ambiente acolhedor</h3><p>Design de interiores pensado pra tirar o medo de ir ao dentista.</p></div>
+<div class="diff-card"><div class="ico">🦷</div><h3>Cuidado com os pequenos</h3><p>Paciência e carinho no atendimento infantil, sem trauma.</p></div>
+<div class="diff-card"><div class="ico">✨</div><h3>Limpeza impecável</h3><p>Clínica sempre limpa, cheirosa e cuidada em cada detalhe.</p></div>
+</div>
+</section>
+
+<section>
+<div class="inner">
+<div class="team-band">
+<div><h3>Dra. Lilian Faria</h3><p>Atendimento atencioso e competente, com foco em deixar cada paciente confortável.</p></div>
+<div><h3>Dr. Luís Henrique</h3><p>Cuidado especial com os pequenos — paciência, dedicação e carinho no atendimento infantil.</p></div>
+</div>
+</div>
+</section>
+
+<section>
+<div class="section-head"><span class="tag">Quem já passou por aqui</span><h2>O que dizem os pacientes</h2></div>
+<div class="reviews">
+<div class="review"><div class="stars">★★★★★</div><p>"O ambiente é organizado, acolhedor e transmite segurança em todos os detalhes."</p><div class="who">Avaliação Google</div></div>
+<div class="review"><div class="stars">★★★★★</div><p>"Nossa gratidão ao Dr. Luís Henrique pelo excelente atendimento e por cuidar tão bem dos sorrisos dos meus pequenos!"</p><div class="who">Leidiane Souza</div></div>
+<div class="review"><div class="stars">★★★★★</div><p>"Excelente atendimento e ótimos profissionais, lugar muito limpo e cheiroso, design de interiores lindo e aconchegante."</p><div class="who">Jairo Yera, Local Guide</div></div>
+</div>
+</section>
+
+<section>
+<div class="locate">
+<div>
+<h2 style="font-size:clamp(22px,2.8vw,28px);margin-bottom:12px">Venha nos conhecer</h2>
+<p style="color:var(--muted)">Atendimento presencial no Jundiaí, Anápolis.</p>
+</div>
+<div>
+<div class="row"><b>Endereço</b><span>Av. Pinheiro Chagas, 50 — Jundiaí, Anápolis, GO</span></div>
+<div class="row"><b>Telefone</b><span>(62) 98622-9991</span></div>
+</div>
+</div>
+</section>
+
+<a class="wa-float" href="https://wa.me/5562986229991?text=Ol%C3%A1!%20Vi%20o%20site%20e%20gostaria%20de%20agendar%20uma%20consulta." target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
+<footer>Clínica Odontológica Dra. Lilian Faria — Anápolis, GO</footer>
+</body>
+</html>

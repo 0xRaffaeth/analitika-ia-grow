@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { trackWhatsAppClick } from '../services/trackbrService';
 
 const FAQS = [
   {
@@ -105,6 +106,7 @@ export const ContactForm: React.FC = () => {
               href="https://wa.me/5562994075161"
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => trackWhatsAppClick('contact_section')}
               className="flex items-center justify-center gap-2 border border-white/20 hover:border-white/40 text-white px-8 py-3.5 rounded-sm text-sm font-bold uppercase tracking-widest transition-all hover:bg-white/5"
             >
               <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">

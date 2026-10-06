@@ -1,4 +1,5 @@
 import React from 'react';
+import { trackWhatsAppClick } from '../services/trackbrService';
 
 const AnalitikaLogo = () => {
   return (
@@ -41,6 +42,7 @@ export const Footer: React.FC = () => {
                 rel="noopener noreferrer"
                 aria-label="Fale com a Analitika pelo WhatsApp"
                 title="WhatsApp"
+                onClick={() => trackWhatsAppClick('footer')}
                 className="group text-gray-400 hover:text-white transition-all duration-200 bg-white/5 hover:bg-[#25D366] p-3.5 rounded-sm border border-white/15 hover:border-[#25D366] hover:shadow-[0_0_14px_rgba(37,211,102,0.35)]"
               >
                 <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
